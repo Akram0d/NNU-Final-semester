@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JSeparator" name="jSeparator4">
+      <Properties>
+        <Property name="orientation" type="int" value="1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator12">
+      <Properties>
+        <Property name="orientation" type="int" value="1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator17">
+      <Properties>
+        <Property name="orientation" type="int" value="1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator22">
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator23">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Students Info"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="33" green="0" red="ff" type="rgb"/>
+    </Property>
+    <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
+      <Point value="[320, 150]"/>
+    </Property>
+    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1000, 1000]"/>
+    </Property>
+    <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[970, 427]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="1" attributes="0">
+          <Component id="jSeparator20" max="32767" attributes="0"/>
+          <Component id="jScrollPane1" alignment="0" pref="1136" max="32767" attributes="0"/>
+          <Component id="jSeparator21" alignment="0" max="32767" attributes="0"/>
+          <Component id="jSeparator2" alignment="0" max="32767" attributes="0"/>
+          <Component id="jSeparator24" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="R1id" min="-2" pref="73" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1F" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1L" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1S" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g1" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g2" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g3" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g4" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g5" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g6" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g7" min="-2" pref="72" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g8" min="-2" pref="64" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g9" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1g10" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R1AVG" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="R2id" min="-2" pref="73" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2F" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2L" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2S" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g1" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g2" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g3" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g4" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g5" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g6" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g7" min="-2" pref="72" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g8" min="-2" pref="64" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g9" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2g10" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R2AVG" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="R3id" min="-2" pref="73" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3F" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3L" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3S" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g1" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g2" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g3" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g4" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g5" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g6" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g7" min="-2" pref="72" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g8" min="-2" pref="64" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g9" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3g10" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R3AVG" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="R4id" min="-2" pref="73" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4F" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4L" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4S" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g1" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g2" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g3" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g4" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g5" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g6" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g7" min="-2" pref="72" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g8" min="-2" pref="64" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g9" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4g10" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R4AVG" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="R5id" min="-2" pref="73" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5F" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5L" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5S" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g1" min="-2" pref="68" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g2" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g3" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g4" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g5" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g6" min="-2" pref="67" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g7" min="-2" pref="72" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g8" min="-2" pref="64" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g9" min="-2" pref="71" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5g10" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="R5AVG" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jScrollPane1" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="R1id" pref="71" max="32767" attributes="0"/>
+                  <Component id="R1F" max="32767" attributes="0"/>
+                  <Component id="R1L" max="32767" attributes="0"/>
+                  <Component id="R1S" max="32767" attributes="0"/>
+                  <Component id="R1g1" max="32767" attributes="0"/>
+                  <Component id="R1g2" max="32767" attributes="0"/>
+                  <Component id="R1g3" max="32767" attributes="0"/>
+                  <Component id="R1g4" max="32767" attributes="0"/>
+                  <Component id="R1g5" max="32767" attributes="0"/>
+                  <Component id="R1g6" max="32767" attributes="0"/>
+                  <Component id="R1g7" max="32767" attributes="0"/>
+                  <Component id="R1g8" max="32767" attributes="0"/>
+                  <Component id="R1g9" max="32767" attributes="0"/>
+                  <Component id="R1AVG" max="32767" attributes="0"/>
+                  <Component id="R1g10" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSeparator20" min="-2" pref="3" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="R2id" pref="70" max="32767" attributes="0"/>
+                  <Component id="R2F" max="32767" attributes="0"/>
+                  <Component id="R2L" max="32767" attributes="0"/>
+                  <Component id="R2S" max="32767" attributes="0"/>
+                  <Component id="R2g1" max="32767" attributes="0"/>
+                  <Component id="R2g2" max="32767" attributes="0"/>
+                  <Component id="R2g3" max="32767" attributes="0"/>
+                  <Component id="R2g4" max="32767" attributes="0"/>
+                  <Component id="R2g5" max="32767" attributes="0"/>
+                  <Component id="R2g6" max="32767" attributes="0"/>
+                  <Component id="R2g7" max="32767" attributes="0"/>
+                  <Component id="R2g8" max="32767" attributes="0"/>
+                  <Component id="R2g9" max="32767" attributes="0"/>
+                  <Component id="R2g10" max="32767" attributes="0"/>
+                  <Component id="R2AVG" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSeparator21" min="-2" pref="4" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="R3id" pref="73" max="32767" attributes="0"/>
+                  <Component id="R3F" max="32767" attributes="0"/>
+                  <Component id="R3L" max="32767" attributes="0"/>
+                  <Component id="R3S" max="32767" attributes="0"/>
+                  <Component id="R3g1" max="32767" attributes="0"/>
+                  <Component id="R3g2" max="32767" attributes="0"/>
+                  <Component id="R3g3" max="32767" attributes="0"/>
+                  <Component id="R3g4" max="32767" attributes="0"/>
+                  <Component id="R3g5" max="32767" attributes="0"/>
+                  <Component id="R3g6" max="32767" attributes="0"/>
+                  <Component id="R3g7" max="32767" attributes="0"/>
+                  <Component id="R3g8" max="32767" attributes="0"/>
+                  <Component id="R3g9" max="32767" attributes="0"/>
+                  <Component id="R3g10" max="32767" attributes="0"/>
+                  <Component id="R3AVG" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSeparator2" min="-2" pref="4" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="R4id" pref="67" max="32767" attributes="0"/>
+                  <Component id="R4F" max="32767" attributes="0"/>
+                  <Component id="R4L" max="32767" attributes="0"/>
+                  <Component id="R4S" max="32767" attributes="0"/>
+                  <Component id="R4g1" max="32767" attributes="0"/>
+                  <Component id="R4g2" max="32767" attributes="0"/>
+                  <Component id="R4g3" max="32767" attributes="0"/>
+                  <Component id="R4g4" max="32767" attributes="0"/>
+                  <Component id="R4g5" max="32767" attributes="0"/>
+                  <Component id="R4g6" max="32767" attributes="0"/>
+                  <Component id="R4g7" max="32767" attributes="0"/>
+                  <Component id="R4g8" max="32767" attributes="0"/>
+                  <Component id="R4g9" max="32767" attributes="0"/>
+                  <Component id="R4g10" max="32767" attributes="0"/>
+                  <Component id="R4AVG" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSeparator24" min="-2" pref="4" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="R5id" pref="73" max="32767" attributes="0"/>
+                  <Component id="R5F" max="32767" attributes="0"/>
+                  <Component id="R5L" max="32767" attributes="0"/>
+                  <Component id="R5S" max="32767" attributes="0"/>
+                  <Component id="R5g1" max="32767" attributes="0"/>
+                  <Component id="R5g2" max="32767" attributes="0"/>
+                  <Component id="R5g3" max="32767" attributes="0"/>
+                  <Component id="R5g4" max="32767" attributes="0"/>
+                  <Component id="R5g5" max="32767" attributes="0"/>
+                  <Component id="R5g6" max="32767" attributes="0"/>
+                  <Component id="R5g7" max="32767" attributes="0"/>
+                  <Component id="R5g8" max="32767" attributes="0"/>
+                  <Component id="R5g9" max="32767" attributes="0"/>
+                  <Component id="R5g10" max="32767" attributes="0"/>
+                  <Component id="R5AVG" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="15" rowCount="0">
+                <Column editable="false" title="      ID" type="java.lang.Long"/>
+                <Column editable="false" title="First Name" type="java.lang.Object"/>
+                <Column editable="false" title="Last Name" type="java.lang.Object"/>
+                <Column editable="false" title="    Sex" type="java.lang.Object"/>
+                <Column editable="false" title="    G1" type="java.lang.Object"/>
+                <Column editable="false" title="    G2" type="java.lang.Object"/>
+                <Column editable="false" title="    G3" type="java.lang.Object"/>
+                <Column editable="false" title="    G4" type="java.lang.Object"/>
+                <Column editable="false" title="    G5" type="java.lang.Object"/>
+                <Column editable="false" title="    G6" type="java.lang.Object"/>
+                <Column editable="false" title="    G7" type="java.lang.Object"/>
+                <Column editable="false" title="    G8" type="java.lang.Object"/>
+                <Column editable="false" title="    G9" type="java.lang.Object"/>
+                <Column editable="false" title="   G10" type="java.lang.Object"/>
+                <Column editable="false" title="  AVG" type="java.lang.Object"/>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JSeparator" name="jSeparator20">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator21">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator2">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator24">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1id">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1F">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1L">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1S">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g3">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g4">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g5">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g6">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g7">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g8">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g9">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1g10">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R1AVG">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2id">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2F">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2L">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2S">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g3">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g4">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g5">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g6">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g7">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g8">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g9">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2g10">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R2AVG">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3id">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3F">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3L">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3S">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g3">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g4">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g5">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g6">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g7">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g8">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g9">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3g10">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R3AVG">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4id">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4F">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4L">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4S">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g3">
+      <Properties>
+        <Property name="doubleBuffered" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g4">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g5">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g6">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g7">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g8">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g9">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4g10">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R4AVG">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5id">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5F">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5L">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5S">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g3">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g4">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g5">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g6">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g7">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g8">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g9">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5g10">
+    </Component>
+    <Component class="javax.swing.JLabel" name="R5AVG">
+    </Component>
+  </SubComponents>
+</Form>

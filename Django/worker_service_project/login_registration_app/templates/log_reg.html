@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static  %}
+    <link rel="stylesheet" href="{% static 'img/header_modified.jpg' %}">
+    <link rel="stylesheet" href="{% static 'img/book.jpg' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- FONT-ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <!-- FADE-IN -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.fadeinleft').each(function (i) {
+
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    if (bottom_of_window > bottom_of_element) {
+                        $(this).animate({
+                            'opacity': '1',
+                            'margin-left': '110px'
+                        }, 1000);
+                    }
+
+                });
+            });
+
+        });
+    </script>
+
+
+
+    <!-- SMOOTH SCROLL -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location
+                    .hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- End of SMOOTH SCROLL -->
+</head>
+<span id="one"></span>
+
+<body>
+    <!-- Start your project here-->
+    <!--Main Navigation-->
+
+    <header>
+        <style>
+            body {
+                margin-top: 110px;
+            }
+
+            #intro {
+                background-image: url(static/img/header_modified.jpg);
+            }
+
+
+
+
+
+
+            /* Height for devices larger than 576px */
+            @media (min-width: 992px) {
+                #intro {
+                    margin-top: -58.59px;
+                }
+            }
+
+            .navbar .nav-link {
+                color: #fff !important;
+            }
+        </style>
+
+        <!-- Navbar -->
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark d-none d-lg-block bg-dark" style="z-index: 2000;">
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <a class="navbar-brand  nav-link" href="C:\Users\PAL WEB\PycharmProjects\worker_service_project\worker_app\templates\Main.html">
+                    <ion-icon style="position: absolute;top: 6px;left: 30px;width: 45px;height: 45px;"
+                        name="logo-web-component">
+                    </ion-icon>
+                    <ion-icon style="position: absolute;top: 18px;left: 44px;width: 18px;height: 18px;"
+                        name="build-outline"></ion-icon>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item active">
+                            <a style="margin-left: 25px;" class="nav-link me-5" aria-current="page" href="#one">One
+                                place for all services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link me-5" href="#reviews" rel="nofollow">see customer
+                                reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="#why_us">Why
+                                us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-5" href="#about_us">About
+                                us</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+
+        <!-- style-for-form -->
+        <style>
+            .container_form {
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+                width: 400px;
+                max-width: 100%;
+            }
+
+            .header {
+                border-bottom: 1px solid #f0f0f0;
+                background-color: #f7f7f7;
+                padding: 20px 40px;
+            }
+
+            .header h2 {
+                margin: 0;
+            }
+
+            .form {
+                padding: 20px 30px;
+            }
+
+            .form-control {
+                margin-bottom: 0px;
+                padding-bottom: 20px;
+                position: relative;
+            }
+
+            .form-control label {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+
+            .form-control input {
+                border: 2px solid #f0f0f0;
+                border-radius: 4px;
+                display: block;
+                font-family: inherit;
+                font-size: 14px;
+                padding: 10px;
+                width: 100%;
+            }
+
+            .form-control input:focus {
+                outline: 0;
+                border-color: #777;
+            }
+
+            .form-control.success input {
+                border-color: #2ecc71;
+            }
+
+            .form-control.error input {
+                border-color: #e74c3c;
+            }
+
+            .form-control i {
+                visibility: hidden;
+                position: absolute;
+                top: 40px;
+                right: 10px;
+            }
+
+            .form-control.success i.fa-check-circle {
+                color: #2ecc71;
+                visibility: visible;
+            }
+
+            .form-control.error i.fa-exclamation-circle {
+                color: #e74c3c;
+                visibility: visible;
+            }
+
+            .form-control small {
+                color: #e74c3c;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+            }
+
+            .form-control.error small {
+                visibility: visible;
+            }
+
+            .form button {
+                background-color: #8e44ad;
+                border: 2px solid #8e44ad;
+                border-radius: 4px;
+                color: #fff;
+                display: block;
+                font-family: inherit;
+                font-size: 16px;
+                padding: 10px;
+                margin-top: 20px;
+                width: 100%;
+            }
+        </style>
+
+        <!-- Background image -->
+        <div id="intro" class=" bg-image  shadow-2-strong  ">
+            <div class="mask d-flex align-items-center h-100 " style="background-color: rgba(0, 0, 0, 0.568);">
+                <div class="col-xl-5 col-md-8">
+
+                    <div style="width: 450px;margin-left: 160px;" class="container_form fadeinleft">
+                        <div class="header">
+                            <h2>Create Account</h2>
+                            {% if "coming_from" in request.session %}
+                            {% if request.session.coming_from == 'REGISTER' %}
+                            {% if messages %}
+                            <ul class="messages">
+                                {% for message in messages %}
+                                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                            {% endif %}
+                            {% endif %}
+                        </div>
+                        <form id="new_user_form" class="form" action="/user/create" method="POST">
+                            {% csrf_token %}
+                            <div class="form-control">
+                                <label for="first_name">First Name</label>
+                                <input name="first_name" type="text" placeholder="florinpop17" id="first_name" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label for="last_name">Last name</label>
+                                <input name="last_name" type="text" placeholder="florinpop17" id="last_name" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email</label>
+                                <input name="email" type="text" placeholder="a@florin-pop.com" id="email" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label for="password">Password</label>
+                                <input name="password" type="password" placeholder="Password" id="password" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="form-control">
+                                <label for="username">Confirm password</label>
+                                <input name="confirm" type="password" placeholder="Password two" id="confirm" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <button type="submit">Register</button>
+                        </form>
+
+                    </div>
+                </div>
+
+
+
+
+                <div style="width:550px ;height: 450px;margin-top: 20px;margin-left: 130px;"
+                    class="container_form fadeinleft">
+                    <div class="header">
+                        <h2>Sign in</h2>
+                    </div>
+                    {% if "coming_from" in request.session %}
+                    {% if request.session.coming_from == 'LOGIN' %}
+                    {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                        <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% endif %}
+                    {% endif %}
+                    <form style="height: 1000px;" id="log_in_form" class="form " action="/check_login" method="post">
+                        {% csrf_token %}
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input name="email_login" type="text" placeholder="a@florin-pop.com" id="email_login" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-control">
+                            <label for="password">Password</label>
+                            <input name="password_login" type="password" placeholder="Password" id="password_login" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+
+                        <button type="submit">Sign in</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Background image -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Footer-->
+    <footer class="bg-light text-lg-start">
+        <div class="py-4 text-center">
+        
+            {% if "coming_from" in request.session %}
+            {% if request.session.coming_from == 'REGISTER' %}
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endif %}
+            {% endif %}
+
+        </div>
+
+
+
+
+        <!-- Copyright -->
+
+    </footer>
+    <!--Footer-->
+    <hr id="reviews" class="m-0" />
+    <div style="gap: 1.6rem;align-items: center;margin-top: 5rem;display: flex;justify-content:center;align-items: center;"
+        class="delivered-meals">
+        <div name="reviews" class="delivered-imgs ">
+            <img style="border-radius: 50%;border: 3px solid white;height: 4rem;width: 4rem;margin-right: -1.6rem;"
+                src="static/img/customer-1.jpg" alt="customer photo" />
+            <img style="border-radius: 50%;border: 3px solid white;height: 4rem;width: 4rem;margin-right: -1.6rem;"
+                src="static/img/customer-2.jpg" alt="customer photo" />
+            <img style="border-radius: 50%;border: 3px solid white;height: 4rem;width: 4rem;margin-right: -1.6rem;"
+                src="static/img/customer-3.jpg" alt="customer photo" />
+            <img style="border-radius: 50%;border: 3px solid white;height: 4rem;width: 4rem;margin-right: -1.6rem;"
+                src="static/img/customer-4.jpg" alt="customer photo" />
+            <img style="border-radius: 50%;border: 3px solid white;height: 4rem;width: 4rem;margin-right: -1.6rem;"
+                src="static/img/customer-5.jpg" alt="customer photo" />
+            <img style="border-radius: 50%;border: 3px solid white;height: 4rem;width: 4rem;margin-right: -1.6rem;"
+                src="static/img/customer-6.jpg" alt="customer photo" />
+        </div>
+        <p style="font-size: 1.8rem;font-weight: 600;color: black;font-weight: 700;margin: 0;" class="delivered-text">
+            <span style="color: rgb(6, 177, 6);margin-left: 20px;">20000+</span> satisfied customers last year!
+        </p>
+    </div>
+    <section class="section-testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials">
+                <figure class="testimonial">
+                    <img class="testimonial-img" alt="photo of customer Dave Bryson" src="static/img/dave.jpg" />
+                    <blockquote class="testimonial-text">
+                        Inexpensive, and the most important thing is that it gets the job done quickly without hassle or
+                        delay,really good job.
+                    </blockquote>
+                    <p class="testimonial-name">&mdash; Dave Bryson</p>
+                </figure>
+
+                <figure class="testimonial">
+                    <img class="testimonial-img" alt="photo of customer Ben Hadley" src="static/img/ben.jpg" />
+                    <blockquote class="testimonial-text">
+                        This website is my first go to when I'm having any trouble in my household equipment, they
+                        are really fast.
+                    </blockquote>
+                    <p class="testimonial-name">&mdash; Ben Hadley</p>
+                </figure>
+
+                <figure class="testimonial">
+                    <img class="testimonial-img" alt="photo of customer Steve Miller" src="static/img/steve.jpg" />
+                    <blockquote class="testimonial-text">
+                        I just started a company, so there's no time for me to fix or do anything around the house. I
+                        can't live a month without
+                        their help.
+                    </blockquote>
+                    <p class="testimonial-name">&mdash; Steve Miller</p>
+                </figure>
+
+                <figure class="testimonial">
+                    <img class="testimonial-img" alt="photo of customer Hannah Smith" src="static/img/hannah.jpg" />
+                    <blockquote class="testimonial-text">
+                        I told my whole family about this service, it frees up so much
+                        time! Plus, workers are honest hard working people so, keep it up.
+                    </blockquote>
+                    <p id="why_us" class="testimonial-name">&mdash; Hannah Smith</p>
+                </figure>
+            </div>
+        </div>
+        <div class="gallery">
+            <figure class="gallery-item">
+                <img src="static/img/gallery-1.jpg" alt="Photo of beatifully arranged food" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="static/img/gallery-2.jpg" alt="Photo of beatifully arranged food" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="static/img/gallery-3.jpg" alt="Photo of laborer" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="static/img/gallery-4.jpg" alt="Photo of laborer" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="static/img/gallery-5.jpg" alt="Photo of laborer" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="static/img/gallery-6.jpg" alt="Photo of laborer" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="static/img/gallery-7.jpg" alt="Photo of laborer" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="static/img/gallery-8.jpg" alt="Photo of laborer" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="static/img/gallery-9.jpg" alt="Photo of laborer" />
+            </figure>
+        </div>
+    </section>
+
+    <style>
+        .section-testimonials {
+            align-items: center;
+            grid-template-columns: 55fr 45fr;
+            display: grid;
+            background-color: #c6c7c8;
+        }
+
+        .testimonials-container {
+            padding: 2.7rem;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 0.8rem;
+            column-gap: 8rem;
+        }
+
+        .testimonial-img {
+            width: 4.4rem;
+            border-radius: 50%;
+            margin-bottom: 1.2rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.6rem;
+        }
+
+        .testimonial-name {
+            font-size: 1.3rem;
+            color: #6f6f6f;
+        }
+
+        .gallery {
+            padding: 1.6rem;
+            padding-top: 0px;
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .gallery-item {
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 130%;
+            display: block;
+            transition: all 0.4s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        figure {
+            margin: 0 0 0rem;
+        }
+
+        .feature-icon {
+            color: white;
+            height: 1.8rem;
+            width: 1.8rem;
+            margin-bottom: 2rem;
+            background-color: rgba(0, 0, 0, 0.219);
+            padding: 1.3rem;
+            border-radius: 50%;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1.6rem;
+        }
+
+        .feature-text {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .grid--4-cols {
+            grid-template-columns: repeat(4, 1fr);
+            margin-left: 4rem;
+        }
+
+        .container {
+
+            padding: 0 3.2rem;
+        }
+
+        .grid {
+            margin-top: 113px;
+            display: grid;
+            row-gap: 9.6rem;
+            column-gap: 7.6rem;
+            margin-bottom: 6.6rem;
+        }
+
+        .feature {
+            width: 326px;
+        }
+
+        .feature:last-child {
+            width: 213px;
+        }
+
+        .feature:nth-child(1) {
+            width: 209px;
+        }
+
+        .feature:nth-child(2) {
+            width: 246px;
+        }
+
+        .feature:nth-child(3) {
+            width: 284px;
+        }
+
+        #intro2 {
+            background-image: url("static/img/book.jpg");
+
+            height: 90vh;
+        }
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+            #intro {
+                margin-top: -58.59px;
+            }
+        }
+
+        #paragraph {
+            font-family: "robota", sans-serif;
+        }
+
+        .form-control {
+            border: none;
+        }
+    </style>
+    <h2 style="text-align: center;margin-top: 40px;">Why should you choose us..?</h2>
+    <div class="container grid grid--4-cols">
+        <div class="feature">
+            <ion-icon class="feature-icon" name="speedometer-outline"></ion-icon>
+            <p class="feature-title">Instant service</p>
+            <p class="feature-text">Book a worker and within 10 minutes he/she will be on your doorstep it is that
+                simple no waiting no delay.</p>
+        </div>
+        <div class="feature">
+
+            <ion-icon class="feature-icon" name="build-outline"></ion-icon>
+            <p class="feature-title">Skilled employees</p>
+            <p class="feature-text">Our workers are handpicked honest skilled people in addition to their previous
+                experiences they undergo a practical exam to estimate their knowledge.</p>
+        </div>
+        <div class="feature">
+
+            <ion-icon class="feature-icon" name="happy-outline"></ion-icon>
+            <p class="feature-title"> Customer satisfaction</p>
+            <p class="feature-text">If a worker does a job for you and you are still not satisfied, he is obliged to pay
+                you another visit to get the job done by our policies.Your satisfaction is our priority</p>
+        </div>
+
+
+        <div class="feature">
+
+            <ion-icon class="feature-icon" name="wallet-outline"></ion-icon>
+            <p class="feature-title">Regular prices</p>
+            <p class="feature-text">Inexpensive. Anyone with any job can get our service for minimum price and maximum
+                efficiency and quality. </p>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- <div style="background-color: rgb(44, 44, 44);height: 650px">
+
+        <div style="height: 650px;opacity: 0.3;margin-left: 10px;" class="about_us" id="about_us">
+            <h2 style="text-align: center;margin-top: 80px;color: white;font-size: 100px;">About us</h2>
+
+            <p style="color:white;font-size: 35px;line-height: 55px;">began with everyday problems encountered by common
+                citizens in our
+                community including
+                ourselves
+                ,a lot of us had jobs to be done in our households that we had absolutely zero to none idea on how
+                to deal with them,after that trying to find the people of experience in different fields to solve these
+                problems for us by asking acquaintances who might or might not know the right man for the job,
+                and even when you reach the right person, sometimes the job is done poorly, which results
+                in it coming back at the future, and so this became the a ground for our idea to grow and florish
+                building bridges between people with daily issues and people of expertise in these fields.
+            </p>
+        </div>
+    </div>  -->
+    <div id="intro2" class="bg-image shadow-2-strong">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.555);">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white my-5">
+                    <h4 id="about_us" class="mb-3" style="font-size: 60px;">About us</h4>
+                </div>
+            </div>
+        </div>
+        <h2
+            style="text-align: center;margin-top: 30px;color: white;opacity: 0.7;font-size: 70px;float: left;margin-right: 20px;margin-left: 10px;">
+            Our
+            <br>story</h2>
+
+        <p id="paragraph" style="color:white;font-size: 35px;line-height: 55px;">began with everyday problems
+            encountered
+            by common citizens in our community including ourselves
+            ,a lot of us had maintenance to be done in our households that we had absolutely zero to none idea on how
+            to deal with them,therefore trying to find the people of experience in different fields to solve these
+            problems for us by asking acquaintances who might or might not know the right man for the job,
+            and even when you reach the right person, sometimes the job is done poorly, which results
+            in it coming back at the future, and so this became the a ground for our idea to grow and florish
+            building bridges between people with daily issues and people of expertise in these fields.
+        </p>
+    </div>
+
+    <div class="text-center p-3 " style="background-color: black; color: white;">
+        © 2024 Copyright: Made by Akram Odeh
+    </div>
+
+
+    <!-- sript-for-icond -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+<!-- SCRIPT FOR Registartion FORM -->
+<script>
+    const new_user_form = document.getElementById('new_user_form');
+    const first_name = document.getElementById('first_name');
+    const last_name = document.getElementById('last_name');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const confirm = document.getElementById('confirm');
+
+    new_user_form.addEventListener('change', e => {
+        e.preventDefault();
+
+        checkInputs();
+    });
+
+    function checkInputs() {
+        // trim to remove the whitespaces
+        const first_nameValue = first_name.value.trim();
+        const last_nameValue = last_name.value.trim();
+        const emailValue = email.value.trim();
+        const passwordValue = password.value.trim();
+        const confirmValue = confirm.value.trim();
+
+        if (first_nameValue === '') {
+            setErrorFor(first_name, 'first name cannot be blank');
+        } else {
+            setSuccessFor(first_name);
+        }
+
+        if (last_nameValue === '') {
+            setErrorFor(last_name, 'last name cannot be blank');
+        } else {
+            setSuccessFor(last_name);
+        }
+
+        if (emailValue === '') {
+            setErrorFor(email, 'Email cannot be blank');
+        } else if (!isEmail(emailValue)) {
+            setErrorFor(email, 'Not a valid email');
+        } else {
+            setSuccessFor(email);
+        }
+
+        if (passwordValue === '') {
+            setErrorFor(password, 'Password cannot be blank');
+        } else {
+            setSuccessFor(password);
+        }
+
+        if (confirmValue === '') {
+            setErrorFor(confirm, 'Please confirm password ');
+        } else if (passwordValue !== confirmValue) {
+            setErrorFor(confirm, 'Passwords does not match');
+        } else {
+            setSuccessFor(confirm);
+        }
+    }
+
+    function setErrorFor(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+        formControl.className = 'form-control error';
+        small.innerText = message;
+    }
+
+    function setSuccessFor(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control success';
+    }
+
+    function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            .test(email);
+    }
+</script>
+<!-- SCRIPT FOR Registration FORM -->
+
+
+<!-- SCRIPT FOR Login FORM -->
+<script>
+    const log_in_form = document.getElementById('log_in_form');
+    const email_login = document.getElementById('email_login');
+    const password_login = document.getElementById('password_login');
+
+
+    log_in_form.addEventListener('change', e => {
+        e.preventDefault();
+
+        checkLoginInputs();
+    });
+
+    function checkLoginInputs() {
+        // trim to remove the whitespaces
+
+        const email_loginValue = email_login.value.trim();
+        const password_loginValue = password_login.value.trim();
+
+
+
+
+        if (email_loginValue === '') {
+            setErrorFor(email_login, 'Email cannot be blank');
+        } else if (!isEmail(email_loginValue)) {
+            setErrorFor(email_login, 'Not a valid email');
+        } else {
+            setSuccessFor(email_login);
+        }
+
+        if (password_loginValue === '') {
+            setErrorFor(password_login, 'Password cannot be blank');
+        } else {
+            setSuccessFor(password_login);
+        }
+    }
+
+    function setErrorFor(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+        formControl.className = 'form-control error';
+        small.innerText = message;
+    }
+
+    function setSuccessFor(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control success';
+    }
+
+    function isEmail(email_login) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            .test(email_login);
+    }
+</script>
+
+<style>
+    .fadeinleft {
+        opacity: 0;
+
+
+    }
+</style>
+
+
+
+</html>
+
+
+
